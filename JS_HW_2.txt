@@ -1,0 +1,29 @@
+           Метод JSON.parse && JSON.stringify.
+           Окружение google browser console.
+
+1 let HW = {"name":"Denis","age":40,"family":["wife Katya","daughter Anna"]};
+# Создаем переменную в текстовом формате json.Получаем объект javascript.
+
+2 console.log(HW);
+  {name: 'Denis', age: 40, family: Array(2)}
+  age: 40
+  family: Array(2)
+  0: "wife Katya"
+  1: "daughter Anna"
+  length: 2
+  [[Prototype]]: Array(0)
+  name: "Denis"
+# Командой console.log(переменная) мы наглядно видим наш объект. Форма ключ = значение и массив.
+  Массив отоброжается список и прономерован 0,1,2 и т.д..
+
+3 let HW_json = JSON.stringify(HW);
+# Создаём новую переменную HW_json и применяем метод stringify.
+  
+4 console.log(HW_json);
+  {"name":"Denis","age":40,"family":["wife Katya","daughter Anna"]}
+# Метод stringify сработал и конвертировал наш объект js в объект json.
+
+5 let new_json_HW = JSON.parse(HW_json);
+# Создаём третью переменную new_json_HW и применяем метод parse.Таким образов мы снова получили объект js.
+ 
+ Используя эти методы,мы можем создавать/редактировать информацию в текстовом формате json.
